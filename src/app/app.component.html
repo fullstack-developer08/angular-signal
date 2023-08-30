@@ -9,10 +9,15 @@
       aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      (click)="toggleNavbar()"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div
+      class="collapse navbar-collapse"
+      [class.show]="showNavBar()"
+      id="navbarNav"
+    >
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" routerLink="example-1">Set Example</a>
@@ -27,7 +32,9 @@
           <a class="nav-link" routerLink="example-4">Computed Example</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="example-5">Using Signal over Subject</a>
+          <a class="nav-link" routerLink="example-5"
+            >Using Signal over Subject</a
+          >
         </li>
       </ul>
     </div>
