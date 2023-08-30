@@ -1,6 +1,6 @@
 import { Component, inject, Signal } from '@angular/core';
 import { HelperService } from '../../helper.service';
-import { User } from 'src/app/examples/mutate-api/client.interface';
+import { User } from '../../../../examples/mutate-api/client.interface';
 
 @Component({
   selector: 'app-review',
